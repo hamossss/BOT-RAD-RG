@@ -21,7 +21,7 @@ client.on('message', message => {
 
 client.on('message', message => {
     if(message.content === 'الشعار'){
-        message.channel.send('``ㆎGR |``')
+        message.channel.send('``!Z |``')
     }
 });
 
@@ -33,7 +33,7 @@ client.on('message', message => {
 
 client.on('message', message => {
     if(message.content === 'الشعار'){
-        message.channel.send('``ζ͡𝑮ℛ多``')
+        message.channel.send('``!༺𝒵多``')
     }
 });
 
