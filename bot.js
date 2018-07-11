@@ -117,61 +117,74 @@ client.on('message', msg => {
 
 
 client.on('message', message => {
-
-    if (message.content.startsWith("رابط")) {        
+    if (message.content.startsWith("الرابط")) {
+        
   message.channel.createInvite({
         thing: true,
-        maxUses: 100,
+        maxUses: 5,
         maxAge: 86400
     }).then(invite =>  
       message.author.sendMessage(invite.url)
     )
     const embed = new Discord.RichEmbed()
-        .setColor("RANDOM")
-        .setDescription(" :white_check_mark: تم ارسال الرابط على الخاص ")
+        .setColor("2fff00")
+        .setDescription("| :white_check_mark:  | :heart:  تم ارسال الرابط على الخاص  ")
+        .setFooter("by:ོ,$!S7Q | ĦÂмØ |♚#6947")
       message.channel.sendEmbed(embed).then(message => {message.delete(10000)})
               const Embed11 = new Discord.RichEmbed()
-        .setColor("RANDOM")
-                .setAuthor(message.guild.name, message.guild.iconURL)
+        .setColor("2fff00")
         .setDescription(`
----------------------
- :kissing_closed_eyes:  - هذا الرابط صالح ل 100 مستخدم فقط
----------------------
- :smiley: - هذا الرابط صالح لمده 24 ساعه فقط
----------------------`)
+**-------------------
+-هذا هو الرابط 
+-ارسله للي تحب وحيآك انت وياه
+-ونورنا ياجميل :heart: 
+------------------- **`)
+        .setFooter("By:ོ,$!S7Q | ĦÂмØ |♚#6947")
       message.author.sendEmbed(Embed11)
     }
- 
-});
+});  
+
 
 
 
 client.on('message', message => {
-
-    if (message.content.startsWith("الرابط")) {        
+    if (message.content.startsWith("رابط")) {
+        
   message.channel.createInvite({
         thing: true,
-        maxUses: 100,
+        maxUses: 5,
         maxAge: 86400
     }).then(invite =>  
       message.author.sendMessage(invite.url)
     )
     const embed = new Discord.RichEmbed()
-        .setColor("RANDOM")
-        .setDescription(" :white_check_mark: تم ارسال الرابط على الخاص ")
+        .setColor("2fff00")
+        .setDescription("| :white_check_mark:  | :heart:  تم ارسال الرابط على الخاص  ")
+        .setFooter("by:ོ,$!S7Q | ĦÂмØ |♚#6947")
       message.channel.sendEmbed(embed).then(message => {message.delete(10000)})
               const Embed11 = new Discord.RichEmbed()
-        .setColor("RANDOM")
-                .setAuthor(message.guild.name, message.guild.iconURL)
+        .setColor("2fff00")
         .setDescription(`
----------------------
- :kissing_closed_eyes:  - هذا الرابط صالح ل 100 مستخدم فقط
----------------------
- :smiley: - هذا الرابط صالح لمده 24 ساعه فقط
----------------------`)
+**-------------------
+-هذا هو الرابط 
+-ارسله للي تحب وحيآك انت وياه
+-ونورنا ياجميل :heart: 
+------------------- **`)
+        .setFooter("By:ོ,$!S7Q | ĦÂмØ |♚#6947")
       message.author.sendEmbed(Embed11)
     }
- 
+});  
+
+
+client.on('ready', () => {
+   console.log(`----------------`);
+      console.log(`Desert Bot- Script By : i1Suhaib`);
+        console.log(`----------------`);
+      console.log(`ON ${client.guilds.size} Servers '     Script By : i1Suhaib ' `);
+    console.log(`----------------`);
+  console.log(`Logged in as ${client.user.tag}!`);
+client.user.setGame(`S7Q,~THE BEST`,"http://twitch.tv/S-F")
+client.user.setStatus("dnd")
 });
 
 // THIS  MUST  BE  THIS  WAY
