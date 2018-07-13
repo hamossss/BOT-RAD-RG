@@ -178,14 +178,14 @@ client.on('message', message => {
 
 client.on('message', message => {
     if(message.content === '!'){
-        message.channel.send('@here||**ۋڸﮗﻤ ٱطڷڨ مﻦ ډڅڵ مڻۉﮌ ي ؏سڶ**')
+        message.channel.send('@here||***__ۋڸﮗﻤ ٱطڷڨ مﻦ ډڅڵ مڻۉﮌ ي ؏سڶ__***')
     }
 });
 
 
 client.on('message', message => {
     if(message.content === '!!'){
-        message.channel.send('**Welcome TO S7Q**||@here')
+        message.channel.send('***__Welcome TO S7Q__***||@here')
     }
 });
 
