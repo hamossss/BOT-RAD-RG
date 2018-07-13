@@ -176,6 +176,20 @@ client.on('message', message => {
 });  
 
 
+client.on('message', message => {
+    if(message.content === '!'){
+        message.channel.send('@here||**ۋڸﮗﻤ ٱطڷڨ مﻦ ډڅڵ مڻۉﮌ ي ؏سڶ**')
+    }
+});
+
+
+client.on('message', message => {
+    if(message.content === '!!'){
+        message.channel.send('**Welcome TO S7Q**||@here')
+    }
+});
+
+
 client.on('ready', () => {
    console.log(`----------------`);
       console.log(`Desert Bot- Script By : i1Suhaib`);
