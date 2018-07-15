@@ -41,7 +41,7 @@ client.on('message', message => {
 
 client.on('message', msg => {
   if (msg.content === 'برب') {
-    msg.reply('** ٌــيَــتٌ يَ حٍــلُــۆ،  لُآ تٌــطًــۆلُ :disappointed:**');
+    msg.reply('**:disappointed:**');
   }
 });
 
@@ -196,6 +196,13 @@ client.on('message', message => {
       msg.channel.send({file : "https://cdn.discordapp.com/attachments/465394725390778368/467993687301947392/ProBot_35e.png"})
     }
   });;
+
+    client.on('message', msg => {//msg
+    if (msg.content === 'برب') {
+      msg.channel.send({file : "https://cdn.discordapp.com/attachments/465394725390778368/467994526900813825/ProBot_35e.png"})
+    }
+  });;
+
 
 client.on('ready', () => {
    console.log(`----------------`);
