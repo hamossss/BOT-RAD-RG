@@ -174,14 +174,14 @@ client.on('message', message => {
 
 client.on('message', message => {
     if(message.content === '!'){
-        message.channel.send('@here||***__ۋڸﮗﻤ ٱطڷڨ مﻦ ډڅڵ مڻۉﮌ ي ؏سڶ__***')
+        message.channel.send('@here***')
     }
 });
 
 
 client.on('message', message => {
     if(message.content === '!!'){
-        message.channel.send('***__Welcome TO S7Q__***||@here')
+        message.channel.send('@here')
     }
 });
 
@@ -202,6 +202,26 @@ client.on('message', message => {
       msg.channel.send({file : "https://cdn.discordapp.com/attachments/465394725390778368/467994526900813825/ProBot_35e.png"})
     }
   });;
+
+    client.on('message', msg => {//msg
+    if (msg.content === 'قوانين') {
+      msg.channel.send({file : "https://cdn.discordapp.com/attachments/465394725390778368/468092429325565962/6b5faded5f982862.png"})
+    }
+  });;
+
+    client.on('message', msg => {//msg
+    if (msg.content === '!!') {
+      msg.channel.send({file : "https://cdn.discordapp.com/attachments/465394725390778368/468092542899191838/ProBot_35e.png"})
+    }
+  });;
+
+
+    client.on('message', msg => {//msg
+    if (msg.content === '!') {
+      msg.channel.send({file : "https://cdn.discordapp.com/attachments/465394725390778368/468092540428746773/ProBo.t_35e.png"})
+    }
+  });;
+
 
 
 client.on('ready', () => {
