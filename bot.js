@@ -46,11 +46,7 @@ client.on('message', msg => {
 });
 
 
-client.on('message', msg => {
-  if (msg.content === 'ترحيب') {
-    msg.reply('https://i.imgur.com/B5wWkpZ.png');
-  }
-});
+
 
 
 
@@ -58,7 +54,7 @@ client.on('message', msg => {
 
 client.on('message', msg => {
   if (msg.content === 'باك') {
-    msg.reply('**وّلّلّّكّكّممّّ نۨــۏڕٺ ۛ ּيۧ مۭــڗ ۛ ּ، ۛ ּمۭــنۨ ۖ ڙمۭــٰا̍نۨ ̨؏ــڼۨــک ۗ :rose::wave:**');
+    msg.reply('** ۗ :rose::wave:**');
   }
 });
 
@@ -111,7 +107,7 @@ client.on('message', msg => {
 
 client.on('message', msg => {
   if (msg.content === 'السلام عليكم') {
-    msg.reply('**ۆعـلُـيَـگـم آلُـسـلُآم ۆرحٍـمةّ آلُلُہ ۆبْرگآتٌہ ، منْۆر. :rose: **');
+    msg.reply('** :rose: **');
   }
 });
 
@@ -195,7 +191,11 @@ client.on('message', message => {
     }
   });;
   
-
+    client.on('message', msg => {//msg
+    if (msg.content === 'السلام عليكم') {
+      msg.channel.send({file : "https://cdn.discordapp.com/attachments/465394725390778368/467993687301947392/ProBot_35e.png"})
+    }
+  });;
 
 client.on('ready', () => {
    console.log(`----------------`);
