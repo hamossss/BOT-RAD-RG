@@ -172,18 +172,7 @@ client.on('message', message => {
 });  
 
 
-client.on('message', message => {
-    if(message.content === '!'){
-        message.channel.send('@here***')
-    }
-});
 
-
-client.on('message', message => {
-    if(message.content === '!!'){
-        message.channel.send('@here')
-    }
-});
 
     client.on('message', msg => {//msg
     if (msg.content === 'باك') {
