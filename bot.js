@@ -199,14 +199,14 @@ client.on('message', message => {
   });;
 
     client.on('message', msg => {//msg
-    if (msg.content === '!!') {
+    if (msg.content === '!') {
       msg.channel.send({file : "https://cdn.discordapp.com/attachments/465394725390778368/468092542899191838/ProBot_35e.png"})
     }
   });;
 
 
     client.on('message', msg => {//msg
-    if (msg.content === '!') {
+    if (msg.content === '!!') {
       msg.channel.send({file : "https://cdn.discordapp.com/attachments/465394725390778368/468092540428746773/ProBo.t_35e.png"})
     }
   });;
