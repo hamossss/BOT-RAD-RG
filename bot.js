@@ -114,60 +114,59 @@ client.on('message', msg => {
 
 client.on('message', message => {
     if (message.content.startsWith("الرابط")) {
-        
-  message.channel.createInvite({
+        message.channel.createInvite({
         thing: true,
-        maxUses: 5,
-        maxAge: 86400
-    }).then(invite =>  
+        maxUses: 1,
+        maxAge: 3600,
+    }).then(invite =>
       message.author.sendMessage(invite.url)
     )
     const embed = new Discord.RichEmbed()
-        .setColor("2fff00")
-        .setDescription("| :white_check_mark:  | :heart:  تم ارسال الرابط على الخاص  ")
-        .setFooter("by:ོ,$!S7Q | ĦÂмØ |♚#6947")
+        .setColor("RANDOM")
+          .setDescription(" تم أرسال الرابط برسالة خاصة ")
+           .setAuthor(client.user.username, client.user.avatarURL)
+                 .setAuthor(client.user.username, client.user.avatarURL)
+                .setFooter('طلب بواسطة: ' + message.author.tag)
+
       message.channel.sendEmbed(embed).then(message => {message.delete(10000)})
               const Embed11 = new Discord.RichEmbed()
-        .setColor("2fff00")
-        .setDescription(`
-**-------------------
--هذا هو الرابط 
--ارسله للي تحب وحيآك انت وياه
--ونورنا ياجميل :heart: 
-------------------- **`)
-        .setFooter("By:ོ,$!S7Q | ĦÂмØ |♚#6947")
+        .setColor("RANDOM")
+
+    .setDescription(" مدة الرابط : ساعه  عدد استخدامات الرابط : 1 ")
       message.author.sendEmbed(Embed11)
     }
-});  
+});
+
+
 
 
 
 
 client.on('message', message => {
     if (message.content.startsWith("رابط")) {
-
-  message.channel.createInvite({
+        message.channel.createInvite({
         thing: true,
-        maxUses: 100,
-        maxAge: 86400
+        maxUses: 1,
+        maxAge: 3600,
     }).then(invite =>
       message.author.sendMessage(invite.url)
     )
     const embed = new Discord.RichEmbed()
         .setColor("RANDOM")
-        .setDescription(" ✅    تم ارسال الرابط على الخاص  ")
+          .setDescription(" تم أرسال الرابط برسالة خاصة ")
+           .setAuthor(client.user.username, client.user.avatarURL)
+                 .setAuthor(client.user.username, client.user.avatarURL)
+                .setFooter('طلب بواسطة: ' + message.author.tag)
+
       message.channel.sendEmbed(embed).then(message => {message.delete(10000)})
               const Embed11 = new Discord.RichEmbed()
         .setColor("RANDOM")
-                .setAuthor(message.guild.name, message.guild.iconURL)
-        .setDescription(`
-**
 
--${message.guild.name}  Link
-**`)
+    .setDescription(" مدة الرابط : ساعه  عدد استخدامات الرابط : 1 ")
       message.author.sendEmbed(Embed11)
     }
 });
+
 
 
 
