@@ -195,18 +195,20 @@ client.on('message', message => {
     }
   });;
 
-    client.on('message', msg => {//msg
-    if (msg.content === '!') {
-      msg.channel.send({file : "**__Welcome To  S7Q...__**:dove: :heart:"})
-    }
-  });;
 
 
-    client.on('message', msg => {//msg
-    if (msg.content === '!!') {
-      msg.channel.send({file : "**يرحب بكوم S7Q باسمي واسم الادارة كلان  :dove: :fire: **"})
-    }
-  });;
+client.on('message', msg => {
+  if (msg.content === '!!') {
+    msg.reply('**يرحب بكوم S7Q باسمي واسم الادارة كلان  :dove: :fire: **');
+  }
+});
+
+client.on('message', msg => {
+  if (msg.content === '!') {
+    msg.reply('**__Welcome To  S7Q...__**:dove: :heart:');
+  }
+});
+
 
 
 
