@@ -197,14 +197,14 @@ client.on('message', message => {
 
     client.on('message', msg => {//msg
     if (msg.content === '!') {
-      msg.channel.send({file : "https://cdn.discordapp.com/attachments/465394725390778368/468092542899191838/ProBot_35e.png"})
+      msg.channel.send({file : "**__Welcome To  S7Q...__**:dove: :heart:"})
     }
   });;
 
 
     client.on('message', msg => {//msg
     if (msg.content === '!!') {
-      msg.channel.send({file : "https://cdn.discordapp.com/attachments/465394725390778368/468092540428746773/ProBo.t_35e.png"})
+      msg.channel.send({file : "**يرحب بكوم S7Q باسمي واسم الادارة كلان  :dove: :fire: **"})
     }
   });;
 
