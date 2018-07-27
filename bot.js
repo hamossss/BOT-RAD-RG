@@ -41,7 +41,7 @@ client.on('message', message => {
 
 client.on('message', msg => {
   if (msg.content === 'برب') {
-    msg.reply('**``ٺــٻۧــټ ۖ ڀــٰ̍ا̍ ۛ ּحۡــڷــﯡۥ ۛ ּلآتـطــۄڸ ۗ::disappointed::broken_heart:``**');
+    msg.reply('**``ٺــٻۧــټ ۖ ڀــٰ̍ا̍ ۛ ּحۡــڷــﯡۥ ۛ ּلآتـطــۄڸ ۗ``::disappointed::broken_heart:**');
   }
 });
 
