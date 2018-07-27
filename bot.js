@@ -41,7 +41,7 @@ client.on('message', message => {
 
 client.on('message', msg => {
   if (msg.content === 'برب') {
-    msg.reply('**:disappointed:**');
+    msg.reply('**``ٺــٻۧــټ ۖ ڀــٰ̍ا̍ ۛ ּحۡــڷــﯡۥ ۛ ּلآتـطــۄڸ ۗ::disappointed::broken_heart:``**');
   }
 });
 
@@ -54,7 +54,7 @@ client.on('message', msg => {
 
 client.on('message', msg => {
   if (msg.content === 'باك') {
-    msg.reply('** ۗ :rose::wave:**');
+    msg.reply('** ۗ`` وّلّلّّكّكّممّّ نۨــۏڕٺ ۛ ּيۧ مۭــڗ ۛ ּ، ۛ ּمۭــنۨ ۖ ڙمۭــٰا̍نۨ ̨؏ــڼۨــک ۗ ``:rose::wave:**');
   }
 });
 
@@ -107,7 +107,7 @@ client.on('message', msg => {
 
 client.on('message', msg => {
   if (msg.content === 'السلام عليكم') {
-    msg.reply('** :rose: **');
+    msg.reply('**`` وِعليّكم ٱلسًلٱم وِرحًمۂ ٱللۂ وِبّركٱتُۂ``:rose:**');
   }
 });
 
@@ -173,30 +173,6 @@ client.on('message', message => {
 
 
 
-
-    client.on('message', msg => {//msg
-    if (msg.content === 'باك') {
-      msg.channel.send({file : "https://cdn.discordapp.com/attachments/465394725390778368/467992746469228545/ProBot_35e.png"})
-    }
-  });;
-  
-    client.on('message', msg => {//msg
-    if (msg.content === 'السلام عليكم') {
-      msg.channel.send({file : "https://cdn.discordapp.com/attachments/465394725390778368/467993687301947392/ProBot_35e.png"})
-    }
-  });;
-
-    client.on('message', msg => {//msg
-    if (msg.content === 'برب') {
-      msg.channel.send({file : "https://cdn.discordapp.com/attachments/465394725390778368/467994526900813825/ProBot_35e.png"})
-    }
-  });;
-
-    client.on('message', msg => {//msg
-    if (msg.content === 'قوانين') {
-      msg.channel.send({file : "https://cdn.discordapp.com/attachments/465394725390778368/468092429325565962/6b5faded5f982862.png"})
-    }
-  });;
 
 
 
