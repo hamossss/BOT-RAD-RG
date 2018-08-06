@@ -10,17 +10,21 @@ client.on('message', message => {
         message.reply('pong');
       }
 });
-client.on('message', message => {
-    if(message.content === 'قوانين'){
-        message.channel.send('https://i.imgur.com/TvIQLGS.png')
-    }
-});
 
-client.on('message', message => {
-    if(message.content === 'خط'){
-        message.channel.send('https://i.imgur.com/qn3uUiV.png')
+ client.on('message', msg => {//msg
+    if (msg.content === 'قوانين') {
+      msg.channel.send({file : "https://i.imgur.com/TvIQLGS.png"})
     }
-});
+  });;
+
+ client.on('message', msg => {//msg
+    if (msg.content === 'خط') {
+      msg.channel.send({file : "https://i.imgur.com/qn3uUiV.png"})
+    }
+  });;
+
+
+
 
 client.on('message', message => {
     if(message.content === 'الشعار'){
